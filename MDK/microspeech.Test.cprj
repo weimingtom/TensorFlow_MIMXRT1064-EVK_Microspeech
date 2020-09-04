@@ -4,7 +4,7 @@
   <created timestamp="2020-09-01T15:55:44" tool="uVision V5.31.0.25"/>
 
   <info>
-    <name>microspeech ML Tensor Flow</name>
+    <name>Microspeech ML Tensor Flow</name>
     <description>Captures audio with a microphone in order to detect the words "yes" and "no"</description>
   </info>
 
