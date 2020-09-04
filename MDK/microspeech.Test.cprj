@@ -5,7 +5,7 @@
 
   <info>
     <name>Microspeech ML Tensor Flow</name>
-    <description>Captures audio with a microphone in order to detect the words "yes" and "no"</description>
+    <description>Captures audio with a microphone in order to detect the words "yes" and "no".</description>
   </info>
 
   <packages>
