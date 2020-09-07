@@ -1,4 +1,0 @@
-Componentize:
-- Audio Frontend
-- Lite Kernels
-
