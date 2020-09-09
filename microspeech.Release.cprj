@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <cprj schemaVersion="0.0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="CPRJ.xsd">
 
-  <created timestamp="2020-09-07T15:32:52" tool="uVision V5.31.0.30"/>
+  <created timestamp="2020-09-09T12:49:09" tool="uVision V5.31.0.30"/>
 
   <info>
     <name>microspeech</name>
@@ -22,8 +22,8 @@
   <target Ddsp="NO_DSP" Dendian="Little-endian" Dfpu="NO_FPU" Dmve="NO_MVE" Dname="MIMXRT1064DVL6A" Dsecure="Non-secure" Dtz="NO_TZ" Dvendor="NXP:11">
     <output list="./Listings/" name="microspeech" obj="./Objects/" type="exe"/>
     <ldflags add="--callgraph --diag_suppress 6439,6314,6329 --entry=Reset_Handler --info sizes --info summarysizes --info totals --info unused --info veneers --load_addr_map_info --map --predefine=&quot;-DXIP_BOOT_HEADER_ENABLE=1&quot; --strict --summary_stderr --symbols --xref" compiler="AC6" file="./RTE/Device/MIMXRT1064DVL6A/MIMXRT1064xxxxx_flexspi_nor.scf"/>
-    <cflags add="-I ./packs/flatbuffers/1.12.0/src/include -I ./packs/gemmlowp/1.0.0/src -I ./packs/kissfft/1.3.1/src -I ./packs/ruy/1.0.0/src -I ./packs/tensorflow-lite/2.4.0 -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/ -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/c -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/core/api -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/kernels -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/kernels/internal -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/kernels/internal/optimized -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/kernels/internal/reference -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/kernels/internal/reference/integer_ops -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/micro -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/micro/benchmarks -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/micro/kernels -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/micro/memory_planner -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/micro/testing -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/schema -I ./src -I ./src/i.MXRT -O1 -ffunction-sections -fno-rtti -fshort-enums -fshort-wchar -funsigned-char -gdwarf-3 -std=c11 -w -xc" compiler="AC6"/>
-    <cxxflags add="-I ./packs/flatbuffers/1.12.0/src/include -I ./packs/gemmlowp/1.0.0/src -I ./packs/kissfft/1.3.1/src -I ./packs/ruy/1.0.0/src -I ./packs/tensorflow-lite/2.4.0 -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/ -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/c -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/core/api -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/kernels -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/kernels/internal -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/kernels/internal/optimized -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/kernels/internal/reference -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/kernels/internal/reference/integer_ops -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/micro -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/micro/benchmarks -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/micro/kernels -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/micro/memory_planner -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/micro/testing -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/schema -I ./src -I ./src/i.MXRT -O1 -ffunction-sections -fno-exceptions -fno-rtti -fshort-enums -fshort-wchar -funsigned-char -gdwarf-3 -std=c++14 -w -xc++" compiler="AC6"/>
+    <cflags add="-DTF_LITE_STATIC_MEMORY -I ./packs/flatbuffers/1.12.0/src/include -I ./packs/gemmlowp/1.0.0/src -I ./packs/kissfft/1.3.1/src -I ./packs/ruy/1.0.0/src -I ./packs/tensorflow-lite/2.4.0 -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/ -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/c -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/core/api -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/kernels -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/kernels/internal -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/kernels/internal/optimized -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/kernels/internal/reference -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/kernels/internal/reference/integer_ops -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/micro -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/micro/benchmarks -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/micro/kernels -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/micro/memory_planner -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/micro/testing -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/schema -I ./src -I ./src/i.MXRT -O1 -Wno-documentation -Wno-documentation-unknown-command -Wno-license-management -Wno-missing-noreturn -Wno-missing-prototypes -Wno-missing-variable-declarations -Wno-nonportable-include-path -Wno-packed -Wno-parentheses-equality -Wno-reserved-id-macro -Wno-sign-conversion -Wno-unused-macros -fno-function-sections -fno-rtti -funsigned-char -gdwarf-3 -std=c11 -xc" compiler="AC6"/>
+    <cxxflags add="-DTF_LITE_STATIC_MEMORY -I ./packs/flatbuffers/1.12.0/src/include -I ./packs/gemmlowp/1.0.0/src -I ./packs/kissfft/1.3.1/src -I ./packs/ruy/1.0.0/src -I ./packs/tensorflow-lite/2.4.0 -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/ -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/c -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/core/api -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/kernels -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/kernels/internal -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/kernels/internal/optimized -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/kernels/internal/reference -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/kernels/internal/reference/integer_ops -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/micro -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/micro/benchmarks -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/micro/kernels -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/micro/memory_planner -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/micro/testing -I ./packs/tensorflow-lite/2.4.0/tensorflow/lite/schema -I ./src -I ./src/i.MXRT -O1 -Wno-documentation -Wno-documentation-unknown-command -Wno-license-management -Wno-missing-noreturn -Wno-missing-prototypes -Wno-missing-variable-declarations -Wno-nonportable-include-path -Wno-packed -Wno-parentheses-equality -Wno-reserved-id-macro -Wno-sign-conversion -Wno-unused-macros -fno-exceptions -fno-function-sections -fno-rtti -funsigned-char -gdwarf-3 -std=c++14 -xc++" compiler="AC6"/>
     <asflags add="-gdwarf-3 -masm=auto" compiler="AC6"/>
   </target>
 
@@ -60,7 +60,6 @@
     <component Cclass="Device" Cgroup="SDK Drivers" Csub="lpi2c_adapter" Cvendor="NXP"/>
     <component Cclass="Device" Cgroup="SDK Drivers" Csub="lpuart" Cvendor="NXP"/>
     <component Cclass="Device" Cgroup="SDK Drivers" Csub="lpuart_adapter" Cvendor="NXP"/>
-    <component Cclass="Device" Cgroup="SDK Drivers" Csub="lpuart_edma" Cvendor="NXP"/>
     <component Cclass="Device" Cgroup="SDK Drivers" Csub="pit" Cvendor="NXP"/>
     <component Cclass="Device" Cgroup="SDK Drivers" Csub="pit_adapter" Cvendor="NXP"/>
     <component Cclass="Device" Cgroup="SDK Drivers" Csub="sai" Cvendor="NXP"/>
@@ -73,7 +72,6 @@
     <component Cclass="Device" Cgroup="SDK Project Template" Csub="RTE_Device" Cvendor="NXP">
       <file attr="config" category="header" name="template/RTE_Device.h" version="1.0.0"/>
     </component>
-    <component Cclass="Device" Cgroup="SDK Utilities" Csub="assert" Cvendor="NXP"/>
     <component Cclass="Device" Cgroup="SDK Utilities" Csub="debug_console" Cvendor="NXP"/>
     <component Cclass="Device" Cgroup="SDK Utilities" Csub="serial_manager" Cvendor="NXP"/>
     <component Cclass="Device" Cgroup="SDK Utilities" Csub="serial_manager_uart" Cvendor="NXP"/>
@@ -83,9 +81,6 @@
       <file attr="config" category="linkerScript" name="arm/MIMXRT1064xxxxx_ram.scf" version="1.1.0"/>
       <file attr="config" category="linkerScript" name="arm/MIMXRT1064xxxxx_sdram.scf" version="1.1.0"/>
       <file attr="config" category="linkerScript" name="arm/MIMXRT1064xxxxx_sdram_txt.scf" version="1.1.0"/>
-    </component>
-    <component Cbundle="ARM Compiler" Cclass="Compiler" Cgroup="Event Recorder" Cvariant="DAP" Cvendor="Keil">
-      <file attr="config" category="header" name="Config/EventRecorderConf.h" version="1.1.0"/>
     </component>
     <component Cbundle="ARM Compiler" Cclass="Compiler" Cgroup="I/O" Csub="STDERR" Cvariant="User" Cvendor="Keil"/>
     <component Cbundle="ARM Compiler" Cclass="Compiler" Cgroup="I/O" Csub="STDIN" Cvariant="User" Cvendor="Keil"/>
@@ -99,7 +94,6 @@
     <group name="tf_output_handler">
       <file category="sourceCpp" name="./src/recognize_commands.cc"/>
       <file category="sourceCpp" name="./src/command_responder.cc"/>
-      <file category="sourceCpp" name="./src/output_handler.cc"/>
     </group>
     <group name="application">
       <file category="sourceC" name="./src/Platform.c"/>
@@ -116,9 +110,7 @@
     </group>
     <group name="tf_micro_frontend">
       <file category="sourceCpp" name="./src/feature_provider.cc"/>
-      <file category="sourceCpp" name="./src/micro_frontend/audio_microfrontend.cc"/>
       <file category="sourceC" name="./src/micro_frontend/lib/frontend.c"/>
-      <file category="sourceCpp" name="./src/audio_provider.cc"/>
       <file category="sourceC" name="./src/micro_frontend/lib/frontend_util.c"/>
       <file category="sourceCpp" name="./src/micro_frontend/lib/fft.cc"/>
       <file category="sourceC" name="./src/micro_frontend/lib/filterbank.c"/>
@@ -135,7 +127,14 @@
       <file category="sourceC" name="./src/micro_frontend/lib/log_lut.c"/>
     </group>
     <group name="Audio">
-      <file category="sourceC" name="./mono_mic.c"/>
+      <file category="sourceC" name="./mic_stub.c"/>
+    </group>
+    <group name="Test-Mic">
+      <file category="sourceCpp" name="./src/audio_provider_test.cc"/>
+      <file category="sourceCpp" name="./src/test/yes_1000ms_sample_data.cc"/>
+      <file category="sourceCpp" name="./src/test/yes_30ms_sample_data.cc"/>
+      <file category="sourceCpp" name="./src/test/no_1000ms_sample_data.cc"/>
+      <file category="sourceCpp" name="./src/test/no_30ms_sample_data.cc"/>
     </group>
     <group name="Data Processing">
       <file category="sourceC" name="./packs/kissfft/1.3.1/src/kiss_fft.c"/>

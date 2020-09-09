@@ -54,6 +54,8 @@ void setup() {
   static tflite::MicroErrorReporter micro_error_reporter;
   error_reporter = &micro_error_reporter;
 
+	TF_LITE_REPORT_ERROR(error_reporter,"Setting up TensorFlow Lite Micro");
+	
   // Map the model into a usable data structure. This doesn't involve any
   // copying or parsing, it's a very lightweight operation.
   model = tflite::GetModel(g_model);
