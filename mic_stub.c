@@ -1,4 +1,5 @@
 
+#include "cmsis_os2.h"                  // ::CMSIS:RTOS2
 
 int audio_thread (void)
 {
