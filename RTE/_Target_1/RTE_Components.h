@@ -3,7 +3,7 @@
  * Auto generated Run-Time-Environment Configuration File
  *      *** Do not modify ! ***
  *
- * Project: 'microspeech.Release' 
+ * Project: 'microspeech' 
  * Target:  'Target 1' 
  */
 
