@@ -4,8 +4,8 @@
   <created timestamp="2020-10-05T11:42:50" tool="uVision V5.32.0.0"/>
 
   <info>
-    <name>microspeech</name>
-    <description>Tensorflow Lite Micro Microspeech example</description>
+    <name>Microspeech with Tensorflow Lite</name>
+    <description>A Tensorflow Lite Micro Microspeech example that repsponds to 'yes' and 'no' wake words.</description>
     <doc>www.tensorflow.org</doc>
     <category>Machine Learning</category>
     <license>MIT</license>
